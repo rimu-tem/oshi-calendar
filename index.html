@@ -13,5 +13,23 @@
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js"></script>
     <script src="app.js"></script>
+    <!-- 予定追加モーダル -->
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>予定を追加</h2>
+        <form id="eventForm">
+            <label for="eventName">イベント名:</label>
+            <input type="text" id="eventName" name="eventName" required><br><br>
+            <label for="eventDetails">詳細:</label>
+            <textarea id="eventDetails" name="eventDetails"></textarea><br><br>
+            <label for="eventTime">時間:</label>
+            <input type="time" id="eventTime" name="eventTime" required><br><br>
+            <label for="eventColor">推しカラー:</label>
+            <input type="color" id="eventColor" name="eventColor" value="#ff5733"><br><br>
+            <button type="submit">予定を追加</button>
+        </form>
+      </div>
+    </div>
 </body>
 </html>
